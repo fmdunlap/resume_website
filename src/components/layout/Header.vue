@@ -5,8 +5,8 @@
                 <ul>
                     <li v-bind:class="{ selected : this.$route.path === '/'}" ><router-link to="/">HOME</router-link></li>
                     <!-- <li v-bind:class="{ selected : this.$route.path === '/blog'}"><router-link to="/blog">BLOG</router-link></li> -->
-                    <li v-bind:class="{ selected : this.$route.path === '/portfolio'}"><router-link to="/portfolio">PORTFOLIO</router-link></li>
-                    <li v-bind:class="{ selected : this.$route.path === '/contact'}"><router-link to="/contact">CONTACT</router-link></li>
+                    <!-- <li v-bind:class="{ selected : this.$route.path === '/portfolio'}"><router-link to="/portfolio">PORTFOLIO</router-link></li> -->
+                    <!-- <li v-bind:class="{ selected : this.$route.path === '/contact'}"><router-link to="/contact">CONTACT</router-link></li> -->
                 </ul>
             </div>
             <div id="social">
