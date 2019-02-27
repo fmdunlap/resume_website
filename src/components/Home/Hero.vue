@@ -20,7 +20,7 @@ export default {
     display: flex;
     margin-left: 0;
     height: 100vh;
-    background-image: url("../../assets/home/hero/hero_background_3-min.jpg");
+    background-image: url("../../assets/home/hero/hero_2560.jpg");
     background-position: left center;
     background-size: cover;
     background-color: #777;
