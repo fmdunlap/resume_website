@@ -40,7 +40,7 @@ export default {
         {
           key: 1,
           title: "Software Development Intern",
-          location: "Amazon, Seattle, WA",
+          location: "Amazon - Seattle, WA",
           date: "September - December 2018",
           badge: "aws",
           body: [
@@ -52,7 +52,7 @@ export default {
         {
           key: 2,
           title: "Software Engineering Intern",
-          location: "OfferUp, Seattle, WA",
+          location: "OfferUp - Seattle, WA",
           date: "May - August 2018",
           badge: "offerup",
           body: [

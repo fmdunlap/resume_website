@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.18.0",
     "chroma-js": "^2.0.3",
     "gsap": "^2.1.1",
     "scrollmagic": "^2.0.6",

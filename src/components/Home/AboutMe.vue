@@ -10,7 +10,7 @@
             <ul>
                 <li>I lived in <a>Austin, TX.</a></li>
                 <li>I moved to Los Angeles, CA for <a>school.</a></li>
-                <li>I met a <a>girl</a> at USC.</li>
+                <li>I met a <a href="https://michellesacks.com/">girl</a> at USC.</li>
                 <li>I moved to Seattle, WA for <a>6 months.</a></li>
                 <li>I am moving to <a>Mountain View, CA</a> in June.</li>
                 <li>I (try to) write <a>code</a> every day.</li>

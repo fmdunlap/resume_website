@@ -1,13 +1,17 @@
 <template>
   <div class="contact">
-    <h1>This is the contact page</h1>
+    <Hero/>
   </div>
 </template>
 
 <script>
-
+import Hero from '../components/Contact/ContactHero.vue'
 
 export default {
+  name: 'contact',
+  components: {
+    Hero
+  }, 
   created(){
     document.title = "Forrest Dunlap | Contact" 
   }

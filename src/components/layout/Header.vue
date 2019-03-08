@@ -3,10 +3,10 @@
         <div id="nav">
             <div id="page-links">
                 <ul>
-                    <li v-bind:class="{ selected : this.$route.path === '/'}" ><router-link to="/">HOME</router-link></li>
+                    <li v-on:click="scrollToTop" v-bind:class="{ selected : this.$route.path === '/'}" ><router-link to="/">HOME</router-link></li>
                     <!-- <li v-bind:class="{ selected : this.$route.path === '/blog'}"><router-link to="/blog">BLOG</router-link></li> -->
                     <!-- <li v-bind:class="{ selected : this.$route.path === '/portfolio'}"><router-link to="/portfolio">PORTFOLIO</router-link></li> -->
-                    <!-- <li v-bind:class="{ selected : this.$route.path === '/contact'}"><router-link to="/contact">CONTACT</router-link></li> -->
+                    <li v-on:click="scrollToTop" v-bind:class="{ selected : this.$route.path === '/contact'}"><router-link to="/contact">CONTACT</router-link></li>
                 </ul>
             </div>
             <div id="social">
@@ -34,7 +34,7 @@ header_scale.cache(true);
 export default {
     name: 'Header',
     methods: {
-        handleScroll(event){
+        handleScroll(){
             let head = document.getElementById("header");
             let hero = document.getElementById("hero-container");
             let height = hero.scrollHeight - (scrollY + head.scrollHeight);
@@ -45,10 +45,12 @@ export default {
             } else if(height <= trigger && height >= 0){
                 let p = height / (trigger);
                 head.style.background = chroma(header_scale(1 - p))
-                console.log(p);
             } else {
                 head.style.background = chroma(opaque).hex();
             }
+        },
+        scrollToTop(event){
+            window.scrollTo(0,0);
         }
     },
     created(){
