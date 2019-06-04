@@ -4,6 +4,14 @@
   flex-direction: column;
 }
 
+.mobile{
+  display: none;
+}
+
+.desktop{
+  display: block;
+}
+
 h1{
   margin: 2% 0;
   font-size: 45px;
@@ -66,6 +74,16 @@ h1{
   float: right;
 }
 
+@media screen and (max-width: 768px){
+  .mobile{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+}
+
 </style>
 
 
@@ -77,8 +95,10 @@ h1{
         >
         <h1>EDUCATION</h1>
         <div class="education-entry">
-            <div><h1>B.S. Computer Engineering & Computer Science <span class="right">August 2014 - May 2019</span></h1></div>
-            <div><h2>University of Southern California <span class="right">Los Angeles, CA</span></h2></div>
+            <div class="desktop"><h1>B.S. Computer Engineering & Computer Science <span class="right">August 2014 - May 2019</span></h1></div>
+            <div class="desktop"><h2>University of Southern California <span class="right">Los Angeles, CA</span></h2></div>
+            <div class="mobile"><h1>B.S. Computer Engineering & Computer Science</h1></div>
+            <div class="mobile"><h2>University of Southern California (2014 - 2019)</h2></div>
             <div class="body">
                 <img class="badge"  :src="require('../../assets/home/resume/usc_badge.png')">
                 <ul class="education-body-text">

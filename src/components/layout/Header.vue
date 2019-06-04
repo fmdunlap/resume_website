@@ -49,7 +49,7 @@ export default {
                 head.style.background = chroma(opaque).hex();
             }
         },
-        scrollToTop(event){
+        scrollToTop(){
             window.scrollTo(0,0);
         }
     },
@@ -116,6 +116,7 @@ a {
 @media screen and (max-width: 865px){
     #social{
         display: none;
+        width: 0px;
     }
 }
 

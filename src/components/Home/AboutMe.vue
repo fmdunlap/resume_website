@@ -63,7 +63,7 @@ export default {
 }
 
 .content a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -73,6 +73,26 @@ img#profile{
     image-rendering: optimizeQuality;
     margin: 0;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+    img#profile{
+        align-self: center;
+        float: none;
+    }
+    .content ul{
+        margin-top: 10px;
+    }
+    .content li{
+        color: black;
+        list-style: none;
+        text-align: center;
+        line-height: 2em;
+        font-size: 1.2rem;
+    }
 }
 
 

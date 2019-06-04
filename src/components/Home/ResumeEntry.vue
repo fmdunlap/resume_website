@@ -1,6 +1,6 @@
 <template>
     <div class="resume-entry">
-        <h1>{{job.title}}, <span class="location">{{job.location}}</span><span class="date">{{job.date}}</span></h1>
+        <h1>{{job.title}}, <span class="location">{{job.location}}</span><br id="mobile-break"/><span class="date">{{job.date}}</span></h1>
         <div class="body">
             <img class="badge"  :src="require('../../assets/home/resume/'+job.badge+'_badge.png')">
             <ul class="resume-body-text">
@@ -29,6 +29,7 @@ export default {
     width: 50%;
     margin: auto;
     min-width: 700px;
+    flex-wrap:wrap;
 }
 
 .resume-entry h1{
@@ -40,6 +41,10 @@ export default {
 }
 .resume-entry h1 .location{
     font-weight: 300;
+}
+
+.resume-entry #mobile-break {
+    display:none;
 }
 
 .resume-entry h1 .date{
@@ -57,6 +62,7 @@ export default {
     margin-left: 10px;
     width: 10px;
     max-width: 60px;
+    min-width: 50px;
     flex-basis: auto;
     flex: 1;
     align-self: flex-start;
@@ -79,12 +85,36 @@ export default {
 }
 
 .resume-body-text > li:first-child{
-    
     list-style: none;
 }
 
 .resume-body-text > li:not(:first-child){
     margin-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .resume-entry #mobile-break{
+        display:block;
+    }
+
+    .resume-entry h1 .date{
+        float: none;
+    }
+
+    .resume-body-text{
+        flex: 10;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .resume-entry{
+        width: 100%;
+        min-width: 0px;
+    }
 }
 
 </style>
