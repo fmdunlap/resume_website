@@ -97,6 +97,13 @@ export default {
         display:block;
     }
 
+    .resume-entry h1{
+        font-size: 14px;
+        width:100%;
+        align-self: left;
+        overflow-wrap: unset;
+    }
+
     .resume-entry h1 .date{
         float: none;
     }
@@ -107,13 +114,23 @@ export default {
         margin-bottom: 10px;
         margin-left: 20px;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.5em;
     }
 
     .resume-entry{
         width: 100%;
         min-width: 0px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    .resume-entry h1{
+        font-size: 12px;
+    }
+    .resume-body-text{
+        font-size: 11px;
     }
 }
 

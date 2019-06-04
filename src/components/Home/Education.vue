@@ -22,8 +22,8 @@ h1{
     display:flex;
     flex-direction: column;
     width: 50%;
-    margin: auto;
     min-width: 700px;
+    margin: auto;
 }
 
 .education-entry h1{
@@ -81,6 +81,24 @@ h1{
 
   .desktop{
     display: none;
+  }
+
+  .education-entry{
+    align-self: center;
+  }
+
+  .education-entry h1{
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  .education-entry h2{
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  .education-body-text{
+    font-size: 12px;
   }
 }
 

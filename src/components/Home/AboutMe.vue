@@ -40,9 +40,9 @@ export default {
 
 .content{
     display: flex;
-    width: max-content;
     margin: auto;
     align-content: center;
+    width: max-content;
 }
 
 .content ul {
@@ -68,19 +68,21 @@ export default {
 }
 
 img#profile{
-    height: calc(24em + 1vw);
+    height:auto;
+    align-self: center;
     float: left;
     image-rendering: optimizeQuality;
     margin: 0;
     border-radius: 5px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 815px){
     .content{
         flex-direction: column;
+        font-size: 30px;
     }
     img#profile{
-        align-self: center;
+        height:420px;
         float: none;
     }
     .content ul{
@@ -92,6 +94,15 @@ img#profile{
         text-align: center;
         line-height: 2em;
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    img#profile{
+        height: 360px;
+    }
+    .content li{
+        font-size: .5em;
     }
 }
 
